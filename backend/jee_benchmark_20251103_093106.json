@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "success_rate": 0.6,
+    "avg_solution_quality": 0.6973333333333332,
+    "avg_routing_accuracy": 0.8000000000000002,
+    "avg_response_time": 13.38905437787374,
+    "total_questions": 5,
+    "successful_questions": 3,
+    "routing_analysis": {
+      "kb_usage": 0,
+      "web_usage": 0,
+      "kb_usage_rate": 0.0,
+      "web_usage_rate": 0.0
+    },
+    "topic_performance": {
+      "algebra": 0.828,
+      "calculus": 0.528,
+      "trigonometry": 0.736
+    },
+    "difficulty_performance": {
+      "medium": 0.782,
+      "easy": 0.528
+    },
+    "benchmark_version": "1.0",
+    "dataset": "JEE-Bench",
+    "total_time": 40.188353061676025,
+    "timestamp": "2025-11-03T09:31:06.573112"
+  },
+  "detailed_results": [
+    {
+      "question_id": "jee_1",
+      "question_text": "If x\u00b2 + y\u00b2 = 25 and xy = 12, find the value of x + y",
+      "topic": "algebra",
+      "difficulty": "medium",
+      "success": true,
+      "metrics": {
+        "routing_accuracy": 0.8,
+        "solution_quality": 0.828,
+        "response_time": 9.220091104507446,
+        "kb_used": false,
+        "web_search_used": false
+      },
+      "routing_decision": "web_search_available",
+      "routing_confidence": 0.0,
+      "routing_time": 2.0788567066192627,
+      "solution_time": 7.141234397888184,
+      "total_time": 9.220091104507446,
+      "agent_solution": {
+        "question": "If x\u00b2 + y\u00b2 = 25 and xy = 12, find the value of x + y",
+        "steps": [
+          {
+            "step_number": 1,
+            "explanation": "Given x\u00b2 + y\u00b2 = 25 and xy = 12, we can use the identity (x + y)\u00b2 = x\u00b2 + y\u00b2 + 2xy to find x + y.",
+            "equation": "(x + y)\u00b2 = 25 + 2(12)"
+          },
+          {
+            "step_number": 2,
+            "explanation": "Solving (x + y)\u00b2 = 49 gives us two possible values for x + y: x + y = \u221a49 = 7 or x + y = -\u221a49 = -7",
+            "equation": "x + y = 7 or x + y = -7"
+          }
+        ],
+        "final_answer": "The value of x + y is 7 or -7",
+        "source": "llm_enhanced",
+        "confidence": 0.9,
+        "source_url": null,
+        "source_title": null,
+        "display_source": "ai_enhanced",
+        "gateway_approved": true,
+        "quality_score": 0.7999999999999999
+      },
+      "evaluation": {
+        "answer_similarity": 1,
+        "step_quality": 0.82,
+        "educational_value": 0.5,
+        "overall_score": 0.828,
+        "agent_answer": "The value of x + y is 7 or -7",
+        "expected_answer": "7 or -7"
+      }
+    },
+    {
+      "question_id": "jee_2",
+      "question_text": "Find the derivative of f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7",
+      "topic": "calculus",
+      "difficulty": "easy",
+      "success": true,
+      "metrics": {
+        "routing_accuracy": 0.8,
+        "solution_quality": 0.528,
+        "response_time": 9.543859720230103,
+        "kb_used": false,
+        "web_search_used": false
+      },
+      "routing_decision": "web_search_available",
+      "routing_confidence": 0.0,
+      "routing_time": 1.5176808834075928,
+      "solution_time": 8.02617883682251,
+      "total_time": 9.543859720230103,
+      "agent_solution": {
+        "question": "Find the derivative of f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7",
+        "steps": [
+          {
+            "step_number": 1,
+            "explanation": "To find the derivative of f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7, we differentiate each term of the function with respect to x.",
+            "equation": "f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7"
+          },
+          {
+            "step_number": 2,
+            "explanation": "The derivative of 3x\u2074 is 4 * 3x^(4-1) = 12x\u00b3. The derivative of -2x\u00b3 is 3 * (-2)x^(3-1) = -6x\u00b2. The derivative of 5x is 5. The derivative of a constant term like -7 is 0.",
+            "equation": "f'(x) = 12x\u00b3 - 6x\u00b2 + 5"
+          }
+        ],
+        "final_answer": "The derivative of f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7 is f'(x) = 12x\u00b3 - 6x\u00b2 + 5",
+        "source": "llm_enhanced",
+        "confidence": 0.9,
+        "source_url": null,
+        "source_title": null,
+        "display_source": "ai_enhanced",
+        "gateway_approved": true,
+        "quality_score": 0.7999999999999999
+      },
+      "evaluation": {
+        "answer_similarity": 0.25,
+        "step_quality": 0.82,
+        "educational_value": 0.5,
+        "overall_score": 0.528,
+        "agent_answer": "The derivative of f(x) = 3x\u2074 - 2x\u00b3 + 5x - 7 is f'(x) = 12x\u00b3 - 6x\u00b2 + 5",
+        "expected_answer": "12x\u00b3 - 6x\u00b2 + 5"
+      }
+    },
+    {
+      "question_id": "jee_3",
+      "question_text": "Solve the equation: 2sin\u00b2x - 3sinx + 1 = 0 for x in [0, 2\u03c0]",
+      "topic": "trigonometry",
+      "difficulty": "medium",
+      "success": true,
+      "metrics": {
+        "routing_accuracy": 0.8,
+        "solution_quality": 0.736,
+        "response_time": 21.403212308883667,
+        "kb_used": false,
+        "web_search_used": false
+      },
+      "routing_decision": "web_search_available",
+      "routing_confidence": 0.0,
+      "routing_time": 1.6093175411224365,
+      "solution_time": 19.79389476776123,
+      "total_time": 21.403212308883667,
+      "agent_solution": {
+        "question": "Solve the equation 2sin\u00b2x - 3sinx + 1 = 0 for x in 0, 2\u03c0",
+        "steps": [
+          {
+            "step_number": 1,
+            "explanation": "Let's solve the equation 2sin\u00b2x - 3sinx + 1 = 0 by substituting sinx as a variable. Let sinx = t. The equation becomes 2t\u00b2 - 3t + 1 = 0, which is a quadratic equation.",
+            "equation": "2sin\u00b2x - 3sinx + 1 = 0"
+          },
+          {
+            "step_number": 2,
+            "explanation": "Factor the quadratic equation 2t\u00b2 - 3t + 1 = 0 to solve for t. The factored form is (2t - 1)(t - 1) = 0. Set each factor to zero to find the solutions: 2t - 1 = 0 or t - 1 = 0. Solve for t to get t = 1/2 or t = 1.",
+            "equation": "2t\u00b2 - 3t + 1 = 0"
+          },
+          {
+            "step_number": 3,
+            "explanation": "Since t = sinx, we have sinx = 1/2 or sinx = 1. To find the solutions for x in the interval [0, 2\u03c0], we look for the angles where sinx equals 1/2 and 1.",
+            "equation": ""
+          },
+          {
+            "step_number": 4,
+            "explanation": "The solutions for sinx = 1/2 are x = \u03c0/6 and x = 5\u03c0/6. The solution for sinx = 1 is x = \u03c0/2.",
+            "equation": ""
+          }
+        ],
+        "final_answer": "The solutions to the equation 2sin\u00b2x - 3sinx + 1 = 0 in the interval [0, 2\u03c0] are x = \u03c0/6, x = 5\u03c0/6, and x = \u03c0/2.",
+        "source": "llm_enhanced",
+        "confidence": 0.9,
+        "source_url": null,
+        "source_title": null,
+        "display_source": "ai_enhanced",
+        "gateway_approved": true,
+        "quality_score": 0.7999999999999999
+      },
+      "evaluation": {
+        "answer_similarity": 0.4,
+        "step_quality": 0.94,
+        "educational_value": 1.0,
+        "overall_score": 0.736,
+        "agent_answer": "The solutions to the equation 2sin\u00b2x - 3sinx + 1 = 0 in the interval [0, 2\u03c0] are x = \u03c0/6, x = 5\u03c0/6, and x = \u03c0/2.",
+        "expected_answer": "5/14"
+      }
+    },
+    {
+      "question_id": "jee_4",
+      "error": "list index out of range",
+      "success": false
+    },
+    {
+      "question_id": "jee_5",
+      "error": "list index out of range",
+      "success": false
+    }
+  ],
+  "recommendations": [
+    "Improve solution generation for complex JEE problems",
+    "Expand knowledge base with JEE-level mathematical concepts",
+    "Focus on improving calculus problem-solving"
+  ]
+}
